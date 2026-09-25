@@ -17,7 +17,7 @@
   /* Checked state */
   .text-options__checkbox:checked + label .text-options__checkmark {
     @apply bg-(--purple-400) border-(--purple-400)
-     bg-[url("./images/icon-check.svg")] bg-no-repeat bg-center;
+     bg-[url("/images/icon-check.svg")] bg-no-repeat bg-center;
   }
 }
 
