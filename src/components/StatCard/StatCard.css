@@ -1,0 +1,25 @@
+@reference "../../base.css";
+
+.stat-card {
+  @apply text-(--neutral-900) p-20 rounded-12 bg-no-repeat bg-position-[calc(100%+3.4375rem)]
+  flex flex-col gap-y-8 min-h-[8.125rem]
+  md:min-h-[9.375rem] md:bg-position-[calc(100%+4.6875rem)];
+
+  .stat-card__value {
+    @apply font-bold text-40 leading-100 -tracking-1
+    md:text-64;
+  }
+  .stat-card__label {
+    @apply text-20 leading-140 -tracking-06;
+  }
+
+  &.stat-card--characters {
+    @apply bg-(--purple-400) bg-[url("./images/pattern-character-count.svg")];
+  }
+  &.stat-card--words {
+    @apply bg-(--yellow-500) bg-[url("./images/pattern-word-count.svg")];
+  }
+  &.stat-card--sentences {
+    @apply bg-(--orange-500) bg-[url("./images/pattern-sentence-count.svg")];
+  }
+}

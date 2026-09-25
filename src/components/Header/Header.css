@@ -1,0 +1,12 @@
+@reference "../../base.css";
+
+.site-header {
+  @apply flex items-center justify-between
+  p-16
+  md:px-32;
+
+  .site-header__logo {
+    @apply h-[1.875rem]
+    md:h-auto;
+  }
+}

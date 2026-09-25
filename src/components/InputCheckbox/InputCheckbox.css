@@ -1,0 +1,47 @@
+@reference "../../base.css";
+
+.text-options__item {
+  .text-options__checkmark {
+    @apply block size-16 border border-n900-to-n200 rounded-4;
+  }
+
+  .text-options__label {
+    @apply text-n900-to-n200 flex items-center gap-x-[.625rem];
+  }
+
+  /* Focus state */
+  .text-options__checkbox:focus-visible + label .text-options__checkmark {
+    @apply bg-(--neutral-0) shadow-input-focus-one outline-2 outline-offset-2 outline-(--purple-400);
+  }
+
+  /* Checked state */
+  .text-options__checkbox:checked + label .text-options__checkmark {
+    @apply bg-(--purple-400) border-(--purple-400)
+     bg-[url("./images/icon-check.svg")] bg-no-repeat bg-center;
+  }
+}
+
+.text-options__character-limit-group {
+  @apply inline-flex items-center gap-x-[.625rem];
+
+  .text-options__limit {
+    @apply min-w-min;
+  }
+  .character-limit-input {
+    @apply text-n900-to-n200 border border-(--neutral-600) rounded-6
+    px-12 field-sizing-content min-w-[3.4375rem];
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+  }
+}
