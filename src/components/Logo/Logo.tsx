@@ -12,13 +12,13 @@ const Logo = () => {
     >
       {theme === "dark" ? (
         <img
-          src="/images/logo-dark-theme.svg"
+          src="images/logo-dark-theme.svg"
           alt="Logo"
           className="site-header__logo"
         />
       ) : (
         <img
-          src="/images/logo-light-theme.svg"
+          src="images/logo-light-theme.svg"
           alt="Logo"
           className="site-header__logo"
         />

@@ -197,7 +197,7 @@ const CharacterCounter = () => {
                     className={`transition-transform ${isExpanded ? "rotate-180" : ""} ${theme === "dark" ? "white-filter" : ""}`}
                     aria-hidden="true"
                   >
-                    <img src="/images/icon-chevron.svg" alt="" />{" "}
+                    <img src="images/icon-chevron.svg" alt="" />{" "}
                   </span>
                 </button>
               )}

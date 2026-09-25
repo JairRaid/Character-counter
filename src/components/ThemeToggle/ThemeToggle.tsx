@@ -11,9 +11,9 @@ const ThemeToggle = () => {
       className="theme-toggle inline-flex size-32 p-[.375rem] rounded-6 bg-n100-to-n700 md:size-[2.75rem] md:rounded-8 md:p-[.6875rem]"
     >
       {theme === "dark" ? (
-        <img src="/images/icon-sun.svg" alt="" />
+        <img src="images/icon-sun.svg" alt="" />
       ) : (
-        <img src="/images/icon-moon.svg" alt="" />
+        <img src="images/icon-moon.svg" alt="" />
       )}
     </button>
   );

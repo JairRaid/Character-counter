@@ -14,12 +14,12 @@
   }
 
   &.stat-card--characters {
-    @apply bg-(--purple-400) bg-[url("./images/pattern-character-count.svg")];
+    @apply bg-(--purple-400) bg-[url("/images/pattern-character-count.svg")];
   }
   &.stat-card--words {
-    @apply bg-(--yellow-500) bg-[url("./images/pattern-word-count.svg")];
+    @apply bg-(--yellow-500) bg-[url("/images/pattern-word-count.svg")];
   }
   &.stat-card--sentences {
-    @apply bg-(--orange-500) bg-[url("./images/pattern-sentence-count.svg")];
+    @apply bg-(--orange-500) bg-[url("/images/pattern-sentence-count.svg")];
   }
 }
